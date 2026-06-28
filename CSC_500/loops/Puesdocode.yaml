@@ -1,0 +1,43 @@
+Pseudocode
+
+START PROGRAM
+
+DEFINE class ItemToPurchase
+
+    WHEN a new ItemToPurchase object is created:
+        Set item_name to "none"
+        Set item_price to 0.0
+        Set item_quantity to 0
+
+    DEFINE method get_cost:
+        Multiply item_price by item_quantity
+        Return the result as the cost of the item.
+
+    DEFINE method print_item_cost:
+        Call get_cost to calculate cost of the item.
+        Display the item name, quantity, price, and cost of the item.
+
+DEFINE main program
+
+    Initialize an empty list called items
+    set total_cost to zero
+   
+    WHILE loop (repeat until user enters "quit" as the item name):
+      Create a new ItemToPurchase object
+      Ask user for item’s name. 
+      IF item’s name is quit:
+        EXIT the loop
+      Ask the price of item and convert answer to a decimal number
+      Ask the quantity of item and convert answer to a whole number
+      APPEND the completed item to the empty ITEMS list
+
+    Display "TOTAL COST"
+    FOR each item in the Items list:
+      Call the print_item_cost method to display that item's details
+      Add that item's get_cost to the total_cost variable
+    Display the combined total cost
+
+IF this file is being run directly:
+    Run the main program
+
+END PROGRAM
