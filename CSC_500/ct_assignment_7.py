@@ -52,5 +52,5 @@ try:
     print(f"Instructor:    {instructors[course_number]}")
     print(f"Meeting Time:  {meeting_times[course_number]}")
 except KeyError:
-    print(f"Sorry, '{course_number}' is not a valid course number. Please try again.")
+    print(f"oops, '{course_number}' does not exist. Please try again friend!")
 
